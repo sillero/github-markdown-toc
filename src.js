@@ -14,5 +14,7 @@
     toc.push(str.join(''));
   });
   
-  alert(toc.join('\n'));  
+  toc = toc.join('\n');
+  console.log(toc);
+  alert(toc);  
 })(document.querySelector('.markdown-body'));
