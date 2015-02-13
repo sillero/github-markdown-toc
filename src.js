@@ -1,7 +1,8 @@
 (function(markdownBody){
   var toc = ['###Table of Contents'];
+  var headers = Array.prototype.slice.call(markdownBody.querySelectorAll('h1, h2, h3, h4, h5, h6'));
   
-  [].map.call(markdownBody.querySelectorAll('h1, h2, h3, h4, h5, h6'), function(node){
+  headers.map(function(node){
     var str = [
       Array(parseInt(node.tagName[1])).join('    '),
       '- [',
