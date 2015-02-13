@@ -1,0 +1,1 @@
+javascript:!function(e){var r=["###Table of Contents"],o=Array.prototype.slice.call(e.querySelectorAll("h1, h2, h3, h4, h5, h6"));o.map(function(e){var o=[Array(parseInt(e.tagName[1])).join("    "),"- [",e.innerText,"](",e.querySelector("a").getAttribute("href"),")"];r.push(o.join(""))}),r=r.join("\n"),console.log(r),alert(r)}(document.querySelector(".markdown-body"))
