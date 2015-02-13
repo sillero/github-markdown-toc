@@ -1,7 +1,7 @@
 #GitHub markdown TOC generator (bookmarklet)
 Use this link as bookmarklet
 ```
-javascript:!function(e){var n=["###Table of Contents"];[].map.call(e.querySelectorAll("h1, h2, h3, h4, h5, h6"),function(e){var o=[Array(parseInt(e.tagName[1])).join("    "),"- [",e.innerText,"](",e.querySelector("a").getAttribute("href"),")"];n.push(o.join(""))}),n=n.join("\n"),console.log(n),alert(n)}(document.querySelector(".markdown-body"))
+javascript:!function(e){var r=["###Table of Contents"],o=Array.prototype.slice.call(e.querySelectorAll("h1, h2, h3, h4, h5, h6"));o.map(function(e){var o=[Array(parseInt(e.tagName[1])).join("    "),"- [",e.innerText,"](",e.querySelector("a").getAttribute("href"),")"];r.push(o.join(""))}),r=r.join("\n"),console.log(r),alert(r)}(document.querySelector(".markdown-body"))
 ```
 
 1. Visit the target github markdown page, let's say https://github.com/facebook/react/blob/master/README.md
